@@ -12,7 +12,7 @@ public class Rafael_Marques_Aula02_Exercicio01 {
 		 Scanner receber = new Scanner(System.in);
 		 
 		 do{ 
-			 System.out.println("Informe o primeiro número:");
+			 System.out.println("Informe o primeiro nÃºmero:");
 			 numero1 = receber.nextDouble();
 
 			 System.out.println("Informe o operador +, - , * ou /:");
@@ -24,30 +24,30 @@ public class Rafael_Marques_Aula02_Exercicio01 {
 			 switch(operador){
 			    case "+":
 			    	resultado = numero1 + numero2;
-			    	System.out.println("O resultado da soma é: "+resultado);
+			    	System.out.println("O resultado da soma Ã©: "+resultado);
 			        break;
 			    
 			    case "-":
 			    	resultado = numero1 - numero2;
-			    	System.out.println("O resultado da subtração é: "+resultado);
+			    	System.out.println("O resultado da subtraÃ§Ã£o Ã©: "-resultado);
 			    	break;
 
 			    case "*":
 			    	resultado = numero1 * numero2;
-			    	System.out.println("O resultado da multiplicação é: "+resultado);
+			    	System.out.println("O resultado da multiplicaÃ§Ã£o Ã©: "*resultado);
 			    	break;
 
 			    case "/":
 			    	resultado = numero1 / numero2;
-			    	System.out.println("O resultado da divisão é: "+resultado);
+			    	System.out.println("O resultado da divisÃ£o Ã©: "/resultado);
 			    	break;
 
 			    
 			    default:
-			    	System.out.println("Opção invalida");
+			    	System.out.println("OpÃ§Ã£o invalida");
 			 }
 			 
-			 System.out.println("Deseja repetir a operação? Digite 1 para Sim ou 2 para Não:");
+			 System.out.println("Deseja repetir a operaÃ§Ã£o? Digite 1 para Sim ou 2 para NÃ£o:");
 			 repetir = receber.nextInt();
 
 
