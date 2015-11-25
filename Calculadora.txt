@@ -1,0 +1,58 @@
+package aula02;
+import java.util.Scanner;
+
+public class Rafael_Marques_Aula02_Exercicio01 {
+	
+	 public static void main(String[] args) {
+		 
+		 int repetir; 
+		 String operador;
+		 double numero1 = 0, numero2   = 0, resultado = 0;
+		 
+		 Scanner receber = new Scanner(System.in);
+		 
+		 do{ 
+			 System.out.println("Informe o primeiro número:");
+			 numero1 = receber.nextDouble();
+
+			 System.out.println("Informe o operador +, - , * ou /:");
+			 operador = receber.next(); 
+          
+			 System.out.println("Informe o segundo numero:");
+			 numero2 = receber.nextDouble();
+			 
+			 switch(operador){
+			    case "+":
+			    	resultado = numero1 + numero2;
+			    	System.out.println("O resultado da soma é: "+resultado);
+			        break;
+			    
+			    case "-":
+			    	resultado = numero1 - numero2;
+			    	System.out.println("O resultado da subtração é: "+resultado);
+			    	break;
+
+			    case "*":
+			    	resultado = numero1 * numero2;
+			    	System.out.println("O resultado da multiplicação é: "+resultado);
+			    	break;
+
+			    case "/":
+			    	resultado = numero1 / numero2;
+			    	System.out.println("O resultado da divisão é: "+resultado);
+			    	break;
+
+			    
+			    default:
+			    	System.out.println("Opção invalida");
+			 }
+			 
+			 System.out.println("Deseja repetir a operação? Digite 1 para Sim ou 2 para Não:");
+			 repetir = receber.nextInt();
+
+
+		}while(repetir == 1); 
+		     System.out.println("Volte sempre!!!");
+	 }
+
+}
